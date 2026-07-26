@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math Runner</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- MENU -->
+<div id="menu" class="screen">
+
+    <div class="card">
+
+        <h1>🎮 Math Runner</h1>
+
+        <p class="subtitle">
+            Belajar Matematika Sambil Bermain
+        </p>
+
+        <div class="bear">
+            🧸
+        </div>
+
+        <input
+        type="text"
+        id="playerName"
+        placeholder="Masukkan Nama">
+
+        <button id="startBtn">
+            Mulai Bermain
+        </button>
+
+    </div>
+
+</div>
+
+<!-- GAME -->
+<div id="game" class="screen hidden">
+
+    <div class="top">
+
+        <div class="item">
+            ❤️
+            <span id="lives">5</span>
+        </div>
+
+        <div class="item">
+            ⭐
+            <span id="score">0</span>
+        </div>
+
+        <div class="item">
+            ⏰
+            <span id="time">05:00</span>
+        </div>
+
+    </div>
+
+    <div class="progressBox">
+
+        <div class="progressText">
+
+            Soal
+
+            <span id="number">
+                1
+            </span>
+
+            /20
+
+        </div>
+
+        <div class="progress">
+
+            <div id="progressFill"></div>
+
+        </div>
+
+    </div>
+
+    <div class="runnerArea">
+
+        <div id="runner">
+            🧸
+        </div>
+
+        <div class="finish">
+            🏁
+        </div>
+
+    </div>
+
+    <div class="questionBox">
+
+        <h2 id="question">
+        </h2>
+
+        <div id="answers">
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- HASIL -->
+<div id="result" class="screen hidden">
+
+    <div class="card">
+
+        <h1>
+            🏆
+        </h1>
+
+        <h2>
+            Permainan Selesai
+        </h2>
+
+        <p id="playerResult">
+        </p>
+
+        <h3>
+
+            Skor :
+
+            <span id="finalScore">
+                0
+            </span>
+
+        </h3>
+
+        <h2 id="grade">
+            A
+        </h2>
+
+        <button onclick="location.reload()">
+
+            Main Lagi
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
